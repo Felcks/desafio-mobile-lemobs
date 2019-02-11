@@ -8,7 +8,7 @@ O código deve ser feito na ferramenta Android Studio. Pode ser em Java ou em Ko
 
 ###### Lista de itens
 
-Para obter os itens da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/stone-pagamentos/desafio-mobile/master/store/products.json
+Para obter os itens da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/Felcks/desafio-mobile-lemobs/master/products.json
 
 A lista de itens deve exibir as seguintes informações:
 + Nome [title]
