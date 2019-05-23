@@ -1,53 +1,66 @@
-# Loja StarWars
+# Biblioteca Pessoal
 
-O desafio consiste em criar uma loja de itens de Star Wars que o usuário é capaz de adicionar os itens desejados em um carrinho de compras e finalizar a compra com uma simulação de transação e-commerce.
+O desafio consiste em criar um app que crie uma blibloteca pessoal de livros virtuais.
 
 O candidato deve dar **fork** neste repositório e após o termino do desenvolvimento, realizar um **pull request** para análise do time.
 
 O código deve ser feito na ferramenta Android Studio. Pode ser em Java ou em Kotlin.
 
-###### Lista de itens
+### Introdução
 
-Para obter os itens da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/Felcks/desafio-mobile-lemobs/master/products.json
+O aplicativo têm três telas. A lista de livros do usuário, a lista de livros à venda e o histórico de transações. 
 
-A lista de itens deve exibir as seguintes informações:
+O aplicativo começa com a lista de livros do usuário. 
+Ao iniciar o aplicativo pela primeira vez esssa lista está vazia.
+
+O usuário começa com R$ 100,00. A informação de dinheiro do usuário deve ser exibida em todas as telas.
+
+O usuário pode ir para a lista de livros à venda ao apertar o botão "Comprar Livros".
+O usuário pode ir para o histórico de transações ao apertar o botão "Ver Histórico de Compras".
+
+###### Meus livros
+
+O aplicativo deve mostrar a lista de livros do usuário.
+
+Um livro tem as seguintes informações:
 + Nome [title]
-+ Preço [price]
-+ Vendedor [seller]
++ Escritor [writer]
 + Foto do item [thumbnailHd]
 
-Após adicionado ao carrinho, o item não pode ser adicionado de novo. O aplicativo deve deixar isso bem claro: "Produto já adicionado ao carrinho".
+###### Lista de livros à venda
 
-###### Carrinho de Compras
+O aplicativo deve mostrar a lista de livros à venda.
+Para obter os livros da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/Felcks/desafio-mobile-lemobs/master/products.json
 
-O aplicativo deve mostrar um carrinho de compras com os itens adicionados e suas respectivas quantidades.
-É possível aumentar a quantidade de itens.
+Um livro à venda tem as seguintes informações:
++ Nome [title]
++ Preço [price]
++ Escritor [writer]
++ Foto do item [thumbnailHd]
 
-###### Simulação de confirmação de Compra
+Cada item possui uma opção de comprar. O aplicativo só aprova a compra se o usuário tiver dinheiro suficiente.
+Se confirmada a compra, o valor deve ser descontado do dinheiro do usuário.
+Livros já comprados não aparecem na lista à venda ou aparecem como bloqueados.
 
-Para finalizar a compra o usuário deve inserir os seguintes dados fictícios:
-+ Número do cartão (com exatos 16 números - XXXX XXXX XXXX XXXX)
-+ Nome do portador do cartão
-+ Vencimento do cartão (MM/yy) - A data deve ser maior que a atual.
-+ CVV (código encontrado na parte traseira do cartão)
-+ Valor da transação (total dos itens no carrinho)
+###### Histórico de transações
 
-Se todos os dados estiverem de acordo, o aplicativo confirma a compra e volta para a tela inicial.
+O aplicativo deve mostrar o histórico de transações de compras.
+As informações que devem ser exibidas são as mesmas salvas no banco de dados. 
 
 ###### Banco de dados
-Todas as transações realizadas devem ser salvas em um banco interno com os seguintes campos:
+Todas as compras realizadas devem ser salvas em um banco interno com os seguintes campos:
++ Nome do livro
 + Valor
 + Data e hora
-+ Últimos 4 dígitos do cartão
-+ Nome do portador do cartão
 
 ###### Resumo do Aplicativo
-+ Tela Lista de Itens
-+ Tela Carrinho de Compras
-+ Tela Transações Feitas
-+ Tela Confirmação de Compra
++ Meus livros
++ Lista de livros à venda
++ Histórico de transações
 
 ###### Bônus
-+ Conseguir dar Zoom nos produtos
-+ Criatividade na organização das telas do aplicativo
-+ Salvar, além da transação, os itens que foram comprados
++ Conseguir dar Zoom nos livros
++ Criatividade na criação das telas do aplicativo
++ Uso de padrões arquiteturais
++ Salvar, além das transações, o valor de dinheiro que o usuário possui.
++ Ter uma opção de favoritar um livro na lista de livros à venda. Livros favoritados aparecem no topo da lista.
