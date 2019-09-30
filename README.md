@@ -1,79 +1,5 @@
 # Biblioteca Virtual
 
-O desafio consiste em criar um app que crie uma blibloteca pessoal de livros virtuais.
-
-O candidato deve dar **fork** neste repositório e após o termino do desenvolvimento, realizar um **pull request** para análise do time.
-
-O código deve ser feito na ferramenta Android Studio. Pode ser em Java ou em Kotlin.
-
-### Introdução
-
-O aplicativo têm três telas. A lista de livros do usuário, a lista de livros à venda e o histórico de transações. 
-
-O aplicativo começa com a lista de livros do usuário. 
-Ao iniciar o aplicativo pela primeira vez esssa lista está vazia.
-
-O usuário começa com R$ 100,00. A informação de dinheiro do usuário deve ser exibida em todas as telas.
-
-O usuário pode ir para a lista de livros à venda ao apertar o botão "Comprar Livros".
-O usuário pode ir para o histórico de transações ao apertar o botão "Ver Histórico de Compras".
-
-###### Meus livros
-
-O aplicativo deve mostrar a lista de livros do usuário.
-
-Um livro tem as seguintes informações:
-+ Nome [title]
-+ Escritor [writer]
-+ Foto do item [thumbnailHd]
-
-###### Lista de livros à venda
-
-O aplicativo deve mostrar a lista de livros à venda.
-Para obter os livros da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/Felcks/desafio-mobile-lemobs/master/products.json
-
-Um livro à venda tem as seguintes informações:
-+ Nome [title]
-+ Preço [price]
-+ Escritor [writer]
-+ Foto do item [thumbnailHd]
-
-Cada item possui uma opção de comprar. O aplicativo só aprova a compra se o usuário tiver dinheiro suficiente.
-Se confirmada a compra, o valor deve ser descontado do dinheiro do usuário.
-Livros já comprados não aparecem na lista à venda ou aparecem como bloqueados.
-
-###### Histórico de transações
-
-O aplicativo deve mostrar o histórico de transações de compras.
-As informações que devem ser exibidas são as mesmas salvas no banco de dados. 
-
-###### Banco de dados
-Todas as compras realizadas devem ser salvas em um banco interno com os seguintes campos:
-+ Nome do livro
-+ Valor
-+ Data e hora
-
-###### Resumo do Aplicativo
-+ Meus livros
-+ Lista de livros à venda
-+ Histórico de transações
-
-###### Bônus
-+ Conseguir dar Zoom nos livros
-+ Criatividade na criação das telas do aplicativo
-+ Uso de padrões arquiteturais
-+ Salvar, além das transações, o valor de dinheiro que o usuário possui.
-+ Ter uma opção de favoritar um livro na lista de livros à venda. Livros favoritados aparecem no topo da lista.
-
-
-
-----------------------------------------------------------------------------------------------------------------------------------
-
-
-# DESAFIO VERSÃO 2
-
-# Biblioteca Virtual
-
 O desafio consiste em criar um aplicativo android de uma blibloteca de livros virtuais.
 
 O candidato deve enviar o código do desafio por email para: rh.lemobs@gmail.com
@@ -85,13 +11,13 @@ O código deve ser feito na ferramenta Android Studio. Pode ser em Java ou em Ko
 O aplicativo têm duas telas. A lista de livros do usuário e a lista de livros à venda.
 
 O aplicativo começa na lista de livros do usuário. 
-Ao iniciar o aplicativo pela primeira vez esssa lista está vazia.
+Ao iniciar o aplicativo pela primeira vez essa lista está vazia.
 
 O usuário começa com R$ 100,00. A informação de dinheiro do usuário deve ser exibida em todas as telas.
 
 O usuário pode ir para a lista de livros à venda ao apertar o botão "Comprar Livros".
 
-###### Tela "Meus Livros"
+### Tela "Meus Livros"
 
 O aplicativo deve mostrar a lista de livros do usuário.
 
@@ -100,7 +26,7 @@ Um livro tem as seguintes informações:
 + Escritor [writer]
 + Foto do item [thumbnailHd]
 
-###### Tela "Livros à Venda"
+### Tela "Livros à Venda"
 
 O aplicativo deve mostrar a lista de livros à venda.
 Para obter os livros da loja, sua aplicação deverá realizar uma chamada `GET` na URL https://raw.githubusercontent.com/Felcks/desafio-mobile-lemobs/master/products.json
@@ -115,11 +41,11 @@ Cada item possui um botão de comprar. O aplicativo só aprova a compra se o usu
 Se confirmada a compra, o valor deve ser descontado do dinheiro do usuário.
 Livros já comprados não aparecem na lista à venda ou aparecem como bloqueados.
 
-###### Resumo do Aplicativo
+### Resumo do Aplicativo
 + Meus livros
 + Livros à venda
 
-###### Bônus
+### Bônus
 + Conseguir dar Zoom nos livros.
 + Criatividade na criação das telas do aplicativo.
 + Uso de padrões arquiteturais.
