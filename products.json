@@ -68,5 +68,12 @@
       "writer": "Machado de Assis",
       "thumbnailHd": "https://mundoeducacao.bol.uol.com.br/upload/conteudo_legenda/4230f70d3f6efaefb1b0f82d0d705f9e.jpg",
       "date": "21/10/2015"
+    },
+    {
+      "title": "Novo livro teste",
+      "price": 10,
+      "writer": "Machado de Assis",
+      "thumbnailHd": "https://mundoeducacao.bol.uol.com.br/upload/conteudo_legenda/4230f70d3f6efaefb1b0f82d0d705f9e.jpg",
+      "date": "21/10/2015"
     }
   ]
